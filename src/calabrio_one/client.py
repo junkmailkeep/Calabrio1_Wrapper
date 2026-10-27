@@ -93,7 +93,7 @@ class CalabrioClient(WFMEndpoints):
             raise ValueError("token must be a nonempty token without whitespace")
         if auth_mode not in {"bearer", "basic"}:
             raise ValueError("auth_mode must be 'bearer' or 'basic'")
-        headers = {"Accept": "application/json", "User-Agent": "calabrio-one-wrapper/0.1.0a1"}
+        headers = {"Accept": "application/json", "User-Agent": "calabrio-one-wrapper/0.1.0a2"}
         auth = None
         if auth_mode == "bearer":
             headers["Authorization"] = f"Bearer {token}"

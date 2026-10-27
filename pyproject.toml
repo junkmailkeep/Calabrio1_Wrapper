@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "calabrio-one-wrapper"
-version = "0.1.0a1"
-description = "An independent, easy-to-use Python client for Calabrio ONE WFM and recording exports"
+version = "0.1.0a2"
+description = "Calabrio ONE Python Client: unofficial API client for recordings, transcripts, evaluation summaries/forms, and WFM"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

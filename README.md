@@ -11,7 +11,7 @@ No live customer environment has been used to validate this initial version.
 
 ## Early testing — feedback welcome
 
-**Version 0.1.0a1 is an early-testing alpha, not a production-ready release.**
+**Version 0.1.0a2 is an early-testing alpha, not a production-ready release.**
 Automated tests cover the wrapper, but it has not been validated against a live
 Calabrio deployment. API compatibility, permissions and available resources vary
 by server version. Test with an authorized non-production environment first.
@@ -33,7 +33,7 @@ for setup and checks. Report security vulnerabilities privately using the
 Python 3.10 or newer. Install the initial alpha from PyPI:
 
 ```sh
-python -m pip install calabrio-one-wrapper==0.1.0a1
+python -m pip install calabrio-one-wrapper==0.1.0a2
 ```
 
 For future prereleases, use `python -m pip install --pre --upgrade calabrio-one-wrapper`.

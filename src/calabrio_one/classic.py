@@ -67,7 +67,7 @@ class ClassicClient:
             transport=transport,
             trust_env=False,
             follow_redirects=False,
-            headers={"Accept": "application/json", "User-Agent": "calabrio-one-wrapper/0.1.0a1"},
+            headers={"Accept": "application/json", "User-Agent": "calabrio-one-wrapper/0.1.0a2"},
         )
         if session_id is not None:
             try:

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "calabrio-one-wrapper"
+version = "0.1.0a1"
+description = "An independent, easy-to-use Python client for Calabrio ONE WFM and recording exports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["httpx>=0.27,<1"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Source = "https://github.com/junkmailkeep/Calabrio1_Wrapper"
+Issues = "https://github.com/junkmailkeep/Calabrio1_Wrapper/issues"
+Documentation = "https://github.com/junkmailkeep/Calabrio1_Wrapper#readme"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1.2", "twine>=6", "ruff>=0.9", "mypy>=1.14", "pytest-cov>=6", "trustme>=1.2,<2"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/calabrio_one"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/tools", "/examples", "/docs", "/README.md", "/CONTRIBUTING.md", "/SECURITY.md", "/LICENSE", "/pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.10"
+check_untyped_defs = true
+
+[tool.coverage.run]
+# Generated forwarding methods are verified against the source schema separately.
+omit = ["src/calabrio_one/endpoints.py"]

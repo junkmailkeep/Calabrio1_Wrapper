@@ -1,0 +1,27 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+private/
+*.log
+.DS_Store
+
+exports/
+
+.mypy_cache/
+.coverage.*
+
+# Local certificate/key material: keep outside published source.
+*.pem
+*.key
+*.p12
+*.pfx

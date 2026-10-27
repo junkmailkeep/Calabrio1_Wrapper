@@ -1,6 +1,6 @@
-# Calabrio ONE Wrapper
+# Calabrio ONE Python Client
 
-An independent Python client for Calabrio ONE **WFM and Classic recording/QM**.
+An unofficial Python client for Calabrio ONE **WFM and Classic recording/QM**.
 Export call recordings with metadata, optional transcripts and evaluation forms,
 or use 111 named WFM operations generated from Calabrio's public demo schema.
 

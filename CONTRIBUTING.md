@@ -1,5 +1,12 @@
 # Contributing
 
+Early testers and pull requests are welcome. Open a bug report in GitHub Issues
+with package/Python versions, Calabrio version if known, expected and actual
+behavior, and a minimal synthetic reproduction. For fixes or documented API
+additions, fork the repo, make a focused change, add meaningful tests, run the
+README's development checks, and open a pull request explaining the change.
+
+
 Keep this repository safe for public distribution. Never commit employer or
 customer names, tenant URLs, credentials, employee records, production responses,
 private schemas, screenshots, or operational details. Use example.com domains,

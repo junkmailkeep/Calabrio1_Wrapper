@@ -9,16 +9,38 @@ all Calabrio ONE APIs: question-level QA answers and server bulk reporting are n
 implemented as dedicated operations, and historical ingestion is not covered.
 No live customer environment has been used to validate this initial version.
 
+## Early testing — feedback welcome
+
+**Version 0.1.0a1 is an early-testing alpha, not a production-ready release.**
+Automated tests cover the wrapper, but it has not been validated against a live
+Calabrio deployment. API compatibility, permissions and available resources vary
+by server version. Test with an authorized non-production environment first.
+
+Found a problem? [Submit a bug report](https://github.com/junkmailkeep/Calabrio1_Wrapper/issues/new?template=bug_report.md).
+Include the package/Python versions, your Calabrio version if known, the method
+used, expected versus actual behavior, and a minimal example with synthetic data.
+**Never include passwords, tokens, real tenant URLs, recordings, transcripts,
+evaluations, customer records or employer information.**
+
+[Pull requests are welcome](https://github.com/junkmailkeep/Calabrio1_Wrapper/pulls)
+for fixes, clearer examples and API coverage backed by public documentation.
+See the [contribution guide](https://github.com/junkmailkeep/Calabrio1_Wrapper/blob/main/CONTRIBUTING.md)
+for setup and checks. Report security vulnerabilities privately using the
+[security guidance](https://github.com/junkmailkeep/Calabrio1_Wrapper/blob/main/SECURITY.md).
+
 ## Install
 
-Python 3.10 or newer. Until the first PyPI release, install from this checkout:
+Python 3.10 or newer. Install the initial alpha from PyPI:
 
 ```sh
-python -m pip install .
+python -m pip install calabrio-one-wrapper==0.1.0a1
 ```
 
-The proposed distribution name is `calabrio-one-wrapper`; its availability on PyPI
-has not been confirmed and the package has not been published.
+For future prereleases, use `python -m pip install --pre --upgrade calabrio-one-wrapper`.
+To install from a source checkout instead, use `python -m pip install .`.
+The distribution name is `calabrio-one-wrapper`; the Python import is `calabrio_one`.
+This is an alpha: verify behavior against an authorized test environment before
+using it with production records.
 
 ## Quick start
 

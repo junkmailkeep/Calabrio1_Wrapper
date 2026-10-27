@@ -19,6 +19,7 @@ classifiers = [
 [project.urls]
 Source = "https://github.com/junkmailkeep/Calabrio1_Wrapper"
 Issues = "https://github.com/junkmailkeep/Calabrio1_Wrapper/issues"
+Contributing = "https://github.com/junkmailkeep/Calabrio1_Wrapper/blob/main/CONTRIBUTING.md"
 Documentation = "https://github.com/junkmailkeep/Calabrio1_Wrapper#readme"
 
 [project.optional-dependencies]

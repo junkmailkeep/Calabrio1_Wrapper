@@ -1,6 +1,6 @@
 # Security
 
-This package is an unpublished alpha. Automated tests and code review do not
+This package is an early-testing alpha. Automated tests and code review do not
 establish compatibility with every Calabrio deployment or guarantee security.
 
 ## Connection settings

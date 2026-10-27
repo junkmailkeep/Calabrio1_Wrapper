@@ -1,7 +1,8 @@
 # Release checklist
 
-The initial package is an unpublished alpha. The project uses MIT licensing;
-confirm that choice and ownership before the first release.
+Version `0.1.0a1` is published on PyPI as an early-testing alpha, with a matching
+GitHub prerelease. The project uses MIT licensing. The audit sections below record
+checks performed before publication; live Calabrio validation remains outstanding.
 
 1. Confirm the proposed name `calabrio-one-wrapper` is available on PyPI.
 2. Review Git history, source files, examples, and built archives for private data.
@@ -149,3 +150,21 @@ After CI succeeds, open Actions → Publish package → Run workflow, select `ma
 and the chosen index. After a successful PyPI upload, verify installation in a new
 virtual environment with `python -m pip install calabrio-one-wrapper==0.1.0a1`.
 Update the README's publication status only after the upload is confirmed.
+
+
+## Initial alpha publication — 2026-10-27
+
+- Published `calabrio-one-wrapper==0.1.0a1` through GitHub Trusted Publishing from
+  commit `8133d715e806fde101c5839d0f2f249188c87e64`.
+- The public repository and GitHub prerelease invite bug reports and pull requests.
+  The PyPI description explicitly identifies the package as an early-testing alpha.
+- All GitHub CI jobs passed on Linux (Python 3.10–3.14), Windows and macOS.
+- Installed the release from PyPI into a new temporary environment and ran all
+  184 tests successfully. Confirmed both wheel and source archives are on PyPI.
+- Publishing uses the `pypi` environment restricted to `main`; no long-lived PyPI
+  token was stored. This alpha was uploaded directly to PyPI, without a TestPyPI
+  rehearsal. Live deployment testing remains outstanding.
+
+[PyPI release](https://pypi.org/project/calabrio-one-wrapper/0.1.0a1/)
+· [GitHub prerelease](https://github.com/junkmailkeep/Calabrio1_Wrapper/releases/tag/v0.1.0a1)
+· [Publishing run](https://github.com/junkmailkeep/Calabrio1_Wrapper/actions/runs/40578571346)
